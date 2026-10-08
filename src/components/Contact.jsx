@@ -8,8 +8,8 @@ import SocialLinks from './SocialLinks.jsx';
 const ENDPOINT = import.meta.env.VITE_FORM_ENDPOINT;
 
 const fields = [
-  { name: 'name', label: 'Name', type: 'text', autoComplete: 'name', placeholder: 'Jane Cooper' },
-  { name: 'email', label: 'Email', type: 'email', autoComplete: 'email', placeholder: 'jane@company.com' },
+  { name: 'name', label: 'Name', type: 'text', autoComplete: 'name', placeholder: 'Anthony Joshua Malabanan' },
+  { name: 'email', label: 'Email', type: 'email', autoComplete: 'email', placeholder: 'anthonyjoshuamalabanan2004@gmail.com' },
   { name: 'subject', label: 'Subject', type: 'text', autoComplete: 'off', placeholder: 'What are you working on?' },
   { name: 'message', label: 'Message', type: 'textarea', autoComplete: 'off', placeholder: 'Tell me what you want to build or what you need help with.' },
 ];

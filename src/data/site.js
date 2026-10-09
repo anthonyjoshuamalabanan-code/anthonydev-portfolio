@@ -29,8 +29,6 @@ export const navItems = [
 export const stats = [
   { value: '3+', label: 'Months learning web development' },
   { value: '1', label: 'Main project' },
-  { value: '5+', label: 'Technologies learning' },
-  { value: '24h', label: 'Typical reply time' },
 ];
 
 export const skillGroups = [
@@ -58,14 +56,7 @@ export const skillGroups = [
       { name: 'GitHub', note: 'Hosting projects and tracking changes', icon: Github },
     ],
   },
-  {
-    title: 'Craft',
-    items: [
-      { name: 'Responsive design', note: 'Layouts that hold from 320px up', icon: MonitorSmartphone },
-      { name: 'Accessibility', note: 'Learning keyboard-friendly layouts', icon: Accessibility },
-      { name: 'Performance', note: 'Learning how to make pages load better', icon: Gauge },
-    ],
-  },
+  
 ];
 
 export const services = [

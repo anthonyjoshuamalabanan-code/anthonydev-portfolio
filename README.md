@@ -3,12 +3,12 @@
 React + Vite + Tailwind CSS (v3) + Framer Motion + Lucide React.
 
 ## Run locally
-```bash
+bash
 npm install
 npm run dev        # http://localhost:5173
 npm run build      # production build in /dist
 npm run preview    # preview the production build
-```
+
 Requires Node 18 or newer.
 
 ## Replace your content

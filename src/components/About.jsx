@@ -15,7 +15,7 @@ I'm a Web developer who is learning by building projects. I enjoy
 turning an idea into a working page, then going back to fix the
 parts that do not look or work the way I want. </p>
 
-```
+
         <p>
           Right now, my main focus is improving my JavaScript, React,
           responsive design, and Git skills. I'm still learning, but each

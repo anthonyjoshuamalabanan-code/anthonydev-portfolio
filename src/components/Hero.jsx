@@ -39,17 +39,15 @@ initial="hidden"
 animate="show"
 className="min-w-0"
 >
+{/* Availability text without the dot */}
 <motion.p
 variants={item}
-className="inline-flex items-center gap-2 border-b border-line pb-2 text-sm text-muted"
-> <span
-           className="h-2 w-2 rounded-full bg-accent"
-           aria-hidden="true"
-         />
+className="border-b border-line pb-2 text-sm text-muted"
+>
 {profile.availability}
 </motion.p>
 
-```
+
       <motion.h1
         variants={item}
         id="home-title"
@@ -107,6 +105,7 @@ className="inline-flex items-center gap-2 border-b border-line pb-2 text-sm text
     </motion.div>
   </div>
 </section>
+
 
 );
 }

@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 :root {
---bg: 242 235 224;
---surface: 249 244 235;
---ink: 76 61 48;
---muted: 133 116 99;
---line: 225 214 198;
---accent: 157 113 79;
---accent2: 133 94 65;
---on-accent: 255 250 241;
---shadow: 92 73 55;
+--bg: 246 241 232;
+--surface: 250 247 240;
+--ink: 74 59 46;
+--muted: 135 119 102;
+--line: 225 216 202;
+--accent: 151 111 79;
+--accent2: 125 89 63;
+--on-accent: 255 251 244;
+--shadow: 0 0 0;
 }
 
 .dark {
@@ -25,6 +25,7 @@
 --on-accent: 35 29 24;
 --shadow: 0 0 0;
 }
+
 
 @layer base {
 html {

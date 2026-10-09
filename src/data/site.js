@@ -13,7 +13,6 @@ export const profile = {
   location: 'Philippines',
   email: 'anthonyjoshuamalabanan2004@gmail.com',
   github: 'https://github.com/anthonyjoshuamalabanan-code',
-  availability: 'Currently learning and building projects',
   experience: 'I am a beginner frontend developer focused on learning by building real projects and improving my skills step by step.',
 };
 

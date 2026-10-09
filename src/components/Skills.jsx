@@ -20,7 +20,7 @@ className="card min-w-0 p-6"
 > <h3 className="font-display text-xl font-semibold">
 {group.title} </h3>
 
-```
+
         <ul className="mt-5 grid gap-2">
           {group.items.map(({ name, note, icon: Icon }) => (
             <li

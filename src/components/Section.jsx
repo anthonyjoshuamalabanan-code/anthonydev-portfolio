@@ -10,7 +10,6 @@ className={`py-12 sm:py-16 ${className}`}
 <h2 id={`${id}-title`} className="text-3xl font-bold sm:text-4xl">
 {title} </h2>
 
-```
       {intro && (
         <p className="mt-3 text-base leading-relaxed text-muted sm:text-lg">
           {intro}

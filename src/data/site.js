@@ -86,12 +86,9 @@ export const projects = [
     demo: 'https://staybasicbasketball.tech/',
     image: '/project/staybasic.jpg',
   },
-];
-
-export const projects = [
   {
-    id: 'stay-basic-basketball',
-    title: 'Stay Basic Basketball',
+    id: 'coffee-shots',
+    title: 'Coffee Shots',
     category: 'Website',
     description:
       'Coffee Shots is a mobile-friendly online ordering website for a two-branch coffee shop in the Philippines, where customers order drinks for pickup or delivery and pay online or in cash, while staff manage orders on a live dashboard.',

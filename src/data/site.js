@@ -6,7 +6,6 @@ import {
 import { makeCover } from '../utils/cover.js';
 import { CgWebsite } from 'react-icons/cg';
 
-// ---- Replace these values with your own details ----
 export const profile = {
   name: 'Anthony Joshua Malabanan',
   title: 'Frontend Web Developer',
@@ -55,7 +54,7 @@ export const skillGroups = [
       { name: 'GitHub', note: 'Hosting projects and tracking changes', icon: Github },
     ],
   },
-  
+
 ];
 
 export const services = [
@@ -86,5 +85,19 @@ export const projects = [
     github: 'https://github.com/anthonyjoshuamalabanan-code',
     demo: 'https://staybasicbasketball.tech/',
     image: '/project/staybasic.jpg',
+  },
+];
+
+export const projects = [
+  {
+    id: 'stay-basic-basketball',
+    title: 'Stay Basic Basketball',
+    category: 'Website',
+    description:
+      'Coffee Shots is a mobile-friendly online ordering website for a two-branch coffee shop in the Philippines, where customers order drinks for pickup or delivery and pay online or in cash, while staff manage orders on a live dashboard.',
+    tags: ['HTML', 'JavaScript', 'Python'],
+    github: 'https://github.com/anthonyjoshuamalabanan-code',
+    demo: 'https://coffeeshots.pages.dev',
+    image: '/project/coffeeshots.png',
   },
 ];

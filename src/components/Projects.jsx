@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 import { projects } from '../data/site.js';
+import safeUrl from '../utils/safeUrl.js';
 import Section from './Section.jsx';
 
 const categories = ['All', ...new Set(projects.map((p) => p.category))];
@@ -19,7 +20,7 @@ function ProjectCard({ project }) {
       className="min-w-0"
     >
       <article className="card group flex h-full flex-col overflow-hidden transition duration-300 hover:-translate-y-1 hover:border-accent/60 motion-reduce:transition-none motion-reduce:hover:translate-y-0">
-        <div className="aspect-[600/380] overflow-hidden">
+        <div className="project-image-frame aspect-[600/380] overflow-hidden">
           <img
             src={image}
             alt={`Preview of the ${title} project`}
@@ -27,7 +28,7 @@ function ProjectCard({ project }) {
             height="380"
             loading="lazy"
             decoding="async"
-            className="h-full w-full object-cover transition duration-500 group-hover:scale-105 motion-reduce:transition-none motion-reduce:group-hover:scale-100"
+            className="h-full w-full object-cover sepia-[.18] contrast-[.92] transition duration-500 group-hover:scale-105 group-hover:sepia-0 group-hover:contrast-100 motion-reduce:transition-none motion-reduce:group-hover:scale-100"
           />
         </div>
 
@@ -55,7 +56,7 @@ function ProjectCard({ project }) {
 
           <div className="mt-5 flex gap-5 border-t border-line pt-4 text-sm font-semibold">
             <a
-              href={demo}
+              href={safeUrl(demo)}
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`${title} live demo (opens in a new tab)`}
@@ -99,7 +100,7 @@ export default function Projects() {
             type="button"
             aria-pressed={active === category}
             onClick={() => setActive(category)}
-            className={`rounded-full border px-4 py-2 text-sm font-medium transition-colors ${
+            className={`filter-button border px-4 py-2 text-sm font-medium uppercase tracking-wider transition-colors ${
               active === category
                 ? 'border-accent bg-accent text-onAccent'
                 : 'border-line text-muted hover:border-accent hover:text-accent'

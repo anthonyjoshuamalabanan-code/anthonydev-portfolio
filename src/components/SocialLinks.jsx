@@ -1,6 +1,7 @@
 import { Github, Mail } from 'lucide-react';
 import { FaDiscord, FaFacebook } from 'react-icons/fa';
 import { profile } from '../data/site.js';
+import safeUrl from '../utils/safeUrl.js';
 
 const links = [
   {
@@ -16,7 +17,7 @@ const links = [
     external: true,
   },
   {
-    label: 'Gmail',
+    label: 'Email',
     href: `mailto:${profile.email}`,
     icon: Mail,
     external: false,
@@ -35,7 +36,7 @@ export default function SocialLinks({ className = '' }) {
       {links.map(({ label, href, icon: Icon, external }) => (
         <li key={label}>
           <a
-            href={href}
+            href={safeUrl(href)}
             aria-label={
               external
                 ? `${label} (opens in a new tab)`
@@ -44,7 +45,7 @@ export default function SocialLinks({ className = '' }) {
             {...(external
               ? { target: '_blank', rel: 'noopener noreferrer' }
               : {})}
-            className="grid h-11 w-11 place-items-center rounded-full border border-line text-muted transition hover:-translate-y-0.5 hover:border-accent hover:text-accent motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+            className="icon-frame grid h-11 w-11 place-items-center border border-line text-muted transition hover:-translate-y-0.5 hover:border-accent hover:text-accent motion-reduce:transition-none motion-reduce:hover:translate-y-0"
           >
             <Icon size={19} aria-hidden="true" />
           </a>

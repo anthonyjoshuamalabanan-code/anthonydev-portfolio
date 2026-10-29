@@ -1,4 +1,4 @@
-// Generates lightweight abstract project covers as inline SVG (no image files to download).
+// Only pass hard-coded palette values and variants here; never interpolate user input into the generated SVG.
 const layouts = [
   // 0: landing page
   () =>

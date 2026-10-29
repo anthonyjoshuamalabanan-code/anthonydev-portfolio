@@ -25,9 +25,9 @@ className="card min-w-0 p-6"
           {group.items.map(({ name, note, icon: Icon }) => (
             <li
               key={name}
-              className="group flex items-center gap-4 rounded-xl border border-transparent p-2.5 transition-colors hover:border-line hover:bg-bg/60"
+              className="group flex items-center gap-4 border border-transparent p-2.5 transition-colors hover:border-line hover:bg-bg/60"
             >
-              <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-accent/10 text-accent transition-colors group-hover:bg-accent group-hover:text-onAccent">
+              <span className="icon-frame grid h-11 w-11 shrink-0 place-items-center border border-line bg-accent/10 text-accent transition-colors group-hover:bg-accent group-hover:text-onAccent">
                 <Icon size={21} aria-hidden="true" />
               </span>
 

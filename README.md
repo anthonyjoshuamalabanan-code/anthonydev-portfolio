@@ -13,15 +13,15 @@ Requires Node 18 or newer.
 
 ## Replace your content
 All content lives in `src/data/site.js`.
-- `profile`: name, location, email, GitHub, LinkedIn, resume URL, availability. Put your resume at `public/resume.pdf` and set `resume: '/resume.pdf'`.
+- `profile`: name, location, GitHub, LinkedIn, resume URL, availability. Put your resume at `public/resume.pdf` and set `resume: '/resume.pdf'`.
 - `stats`, `skillGroups`, `services`, `processSteps`, `testimonials`: edit text or add objects.
 - `projects`: copy an entry and change `id`, `title`, `category`, `description`, `tags`, `github`, `demo`. The filter buttons update automatically from the categories you use.
   For real screenshots, put images in `src/assets/` (WebP, about 1200px wide), import them, and set `image: importedImage`.
-- Colors: edit the CSS variables at the top of `src/index.css` (`:root` for light, `.dark` for dark).
+- Colors: edit the Midnight Navy, Champagne Gold, and Deep Emerald CSS variables at the top of `src/index.css`. The page uses a single theme.
 - SEO: edit the title, description, canonical URL, and Open Graph tags in `index.html`. Add a 1200x630 `public/og-image.png` for social previews.
 
 ## Contact form
-By default the form opens the visitor's email app with the message pre-filled. To receive messages directly, create a form at Formspree (or similar), copy `.env.example` to `.env`, and set `VITE_FORM_ENDPOINT` to its URL.
+The message form is shown only when a secure HTTPS form endpoint is configured. Create a form at Formspree (or similar), copy `.env.example` to `.env`, and set `VITE_FORM_ENDPOINT` to its URL. Until then, the contact section links to GitHub.
 
 ## Deploy
 Run `npm run build`, then publish the `dist` folder.

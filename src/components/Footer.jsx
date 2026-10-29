@@ -5,9 +5,10 @@ import SocialLinks from './SocialLinks.jsx';
 export default function Footer() {
   const year = new Date().getFullYear();
   return (
-    <footer className="border-t border-line">
+    <footer className="border-t border-line text-center">
+      <div aria-hidden="true" className="footer-ornament mx-auto mt-8" />
       <div className="container-x grid gap-10 py-14 md:grid-cols-[1.4fr_1fr_1fr]">
-        <div className="min-w-0">
+        <div className="min-w-0 md:text-left">
           <p className="font-display text-xl font-bold">{profile.name}</p>
           <p className="mt-2 max-w-xs text-muted">{profile.title}. Learning, building, and improving one project at a time.</p>
         </div>
@@ -20,7 +21,7 @@ export default function Footer() {
             ))}
           </ul>
         </nav>
-        <div>
+        <div className="flex flex-col items-center md:items-end">
           <SocialLinks />
           <button
             type="button"

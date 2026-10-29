@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Menu, Moon, Sun, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { navItems, profile } from '../data/site.js';
 import useActiveSection from '../hooks/useActiveSection.js';
 
 const sectionIds = navItems.map((item) => item.id);
 
-export default function Header({ theme, onToggleTheme }) {
+export default function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const active = useActiveSection(sectionIds);
@@ -34,10 +34,8 @@ export default function Header({ theme, onToggleTheme }) {
     return () => window.removeEventListener('keydown', onKey);
   }, [open]);
 
-  const isDark = theme === 'dark';
-
   const linkClass = (id) =>
-    `rounded-full px-3.5 py-2 text-sm font-medium transition-colors ${
+    `header-link px-3.5 py-2 text-sm font-medium uppercase tracking-[0.12em] transition-colors ${
       active === id
         ? 'text-accent'
         : 'text-muted hover:text-ink'
@@ -56,12 +54,12 @@ export default function Header({ theme, onToggleTheme }) {
         {/* Logo + Name */}
         <a
           href="#home"
-          className="flex min-w-0 items-center gap-2.5 font-display text-lg font-bold"
+          className="flex min-w-0 items-center gap-2.5 font-display text-lg font-bold tracking-wider"
         >
           <img
             src="/icon.png"
             alt=""
-            className="h-9 w-9 shrink-0 rounded-xl object-cover"
+            className="h-9 w-9 shrink-0 border border-accent object-cover"
           />
 
           <span className="truncate">
@@ -91,32 +89,7 @@ export default function Header({ theme, onToggleTheme }) {
           </ul>
         </nav>
 
-        {/* Theme + Mobile Menu */}
         <div className="flex items-center gap-2">
-
-          {/* Theme Toggle */}
-          <button
-            type="button"
-            onClick={onToggleTheme}
-            aria-label={`Switch to ${
-              isDark ? 'light' : 'dark'
-            } mode`}
-            className="grid h-11 w-11 place-items-center rounded-full border border-line text-muted transition hover:border-accent hover:text-accent"
-          >
-            {isDark ? (
-              <Sun
-                size={19}
-                aria-hidden="true"
-              />
-            ) : (
-              <Moon
-                size={19}
-                aria-hidden="true"
-              />
-            )}
-          </button>
-
-          {/* Mobile Menu Button */}
           <button
             type="button"
             onClick={() => setOpen((o) => !o)}
@@ -125,7 +98,7 @@ export default function Header({ theme, onToggleTheme }) {
             aria-label={
               open ? 'Close menu' : 'Open menu'
             }
-            className="grid h-11 w-11 place-items-center rounded-full border border-line text-muted transition hover:border-accent hover:text-accent lg:hidden"
+            className="grid h-11 w-11 place-items-center border border-line text-muted transition hover:border-accent hover:text-accent lg:hidden"
           >
             {open ? (
               <X
@@ -180,7 +153,7 @@ export default function Header({ theme, onToggleTheme }) {
                           ? 'location'
                           : undefined
                       }
-                      className={`block rounded-xl px-3 py-3 text-base font-medium ${
+                      className={`block border-l-2 px-3 py-3 text-base font-medium uppercase tracking-wider ${
                         active === id
                           ? 'bg-accent/10 text-accent'
                           : 'text-ink hover:bg-surface'

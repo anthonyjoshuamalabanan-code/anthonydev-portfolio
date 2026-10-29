@@ -13,6 +13,7 @@ export const profile = {
   email: 'anthonyjoshuamalabanan2004@redacted.invalid',
   github: 'https://github.com/anthonyjoshuamalabanan-code',
   experience: 'I am a beginner frontend developer focused on learning by building real projects and improving my skills step by step.',
+  availability: 'Open to learning opportunities',
 };
 
 export const navItems = [

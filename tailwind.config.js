@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  darkMode: 'class',
   content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
     extend: {
@@ -13,10 +12,13 @@ export default {
         accent: 'rgb(var(--accent) / <alpha-value>)',
         accent2: 'rgb(var(--accent2) / <alpha-value>)',
         onAccent: 'rgb(var(--on-accent) / <alpha-value>)',
+        danger: 'rgb(var(--danger) / <alpha-value>)',
+        success: 'rgb(var(--success) / <alpha-value>)',
       },
       fontFamily: {
-        display: ['"Bricolage Grotesque"', 'system-ui', 'sans-serif'],
-        sans: ['"Hanken Grotesk"', 'system-ui', 'sans-serif'],
+        display: ['Cinzel', 'Georgia', 'serif'],
+        hero: ['"Poiret One"', 'sans-serif'],
+        sans: ['Jost', 'system-ui', 'sans-serif'],
         mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Consolas', 'monospace'],
       },
       boxShadow: {

@@ -1,0 +1,47 @@
+@font-face {
+  font-family: Cinzel;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('@fontsource/cinzel/files/cinzel-latin-400-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Cinzel;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('@fontsource/cinzel/files/cinzel-latin-600-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Jost;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('@fontsource/jost/files/jost-latin-400-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Jost;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('@fontsource/jost/files/jost-latin-500-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Jost;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('@fontsource/jost/files/jost-latin-600-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('@fontsource/poiret-one/files/poiret-one-latin-400-normal.woff2') format('woff2');
+}

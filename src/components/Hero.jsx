@@ -32,17 +32,19 @@ return ( <section
    id="home"
    aria-labelledby="home-title"
    className="relative overflow-hidden"
- > <div className="container-x grid grid-cols-1 items-center gap-12 py-12 sm:py-16 lg:py-20">
+ >
+  <div aria-hidden="true" className="hero-sunburst pointer-events-none absolute inset-0 opacity-80" />
+  <div className="container-x relative grid grid-cols-1 items-center gap-12 py-12 sm:py-16 lg:py-20">
 <motion.div
 variants={container}
 initial="hidden"
 animate="show"
-className="min-w-0"
+className="min-w-0 text-center"
 >
-{/* Availability text without the dot */}
+<div aria-hidden="true" className="hero-ornament" />
 <motion.p
 variants={item}
-className="border-b border-line pb-2 text-sm text-muted"
+className="mx-auto w-fit border-b border-line pb-2 text-sm uppercase tracking-[0.16em] text-muted"
 >
 {profile.availability}
 </motion.p>
@@ -51,24 +53,22 @@ className="border-b border-line pb-2 text-sm text-muted"
       <motion.h1
         variants={item}
         id="home-title"
-        className="mt-6 text-balance text-4xl font-bold leading-[1.1] sm:text-5xl lg:text-6xl"
+        className="mt-6 text-balance font-hero text-4xl font-normal leading-[1.15] sm:text-5xl lg:text-6xl"
       >
-        Hi, I&apos;m {profile.name}, a Frontend Web Developer
+        Hi, I&apos;m <span className="text-accent">{profile.name}</span>, a Frontend Web Developer
       </motion.h1>
 
       <motion.p
         variants={item}
-        className="mt-5 max-w-xl text-lg text-muted"
+        className="mx-auto mt-5 max-w-xl text-lg text-muted"
       >
-        I&apos;m a beginner frontend developer from the Philippines,
-        learning by building websites and small projects. I&apos;m focused
-        on getting better at JavaScript, React, responsive design, and
-        writing cleaner code.
+        I&apos;m a student learning frontend development and building small
+        projects as I grow my skills.
       </motion.p>
 
       <motion.div
         variants={item}
-        className="mt-7 flex flex-wrap gap-3"
+        className="mt-7 flex flex-wrap justify-center gap-3"
       >
         <a href="#projects" className="btn btn-primary">
           View My Work
@@ -99,7 +99,7 @@ className="border-b border-line pb-2 text-sm text-muted"
         </a>
       </motion.div>
 
-      <motion.div variants={item} className="mt-8">
+      <motion.div variants={item} className="mt-8 flex justify-center">
         <SocialLinks />
       </motion.div>
     </motion.div>

@@ -8,14 +8,14 @@ export default function Process() {
       id="process"
       title="How I work on a project"
       intro="My process is simple: understand the idea, build it, test it, and learn from what I could improve."
-      className="bg-surface/30"
+      className="section-pattern"
     >
       <ol className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5 lg:gap-6">
         {processSteps.map(({ title, description, icon: Icon }, i) => (
           <Reveal as="li" key={title} delay={i * 0.06} className="min-w-0 border-t-2 border-accent/40 pt-6">
             <div className="flex items-center gap-3">
-              <span className="grid h-10 w-10 place-items-center rounded-full bg-accent text-sm font-bold text-onAccent" aria-hidden="true">
-                {i + 1}
+              <span className="step-diamond grid h-10 w-10 place-items-center bg-accent text-sm font-bold text-onAccent" aria-hidden="true">
+                <span>{i + 1}</span>
               </span>
               <Icon size={20} className="text-muted" aria-hidden="true" />
             </div>

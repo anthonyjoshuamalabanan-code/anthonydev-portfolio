@@ -21,7 +21,7 @@ All content lives in `src/data/site.js`.
 - SEO: edit the title, description, canonical URL, and Open Graph tags in `index.html`. Add a 1200x630 `public/og-image.png` for social previews.
 
 ## Contact form
-The message form is shown only when a secure HTTPS form endpoint is configured. Create a form at Formspree (or similar), copy `.env.example` to `.env`, and set `VITE_FORM_ENDPOINT` to its URL. Until then, the contact section links to GitHub.
+The message form is always available. When `VITE_FORM_ENDPOINT` is configured with a secure HTTPS form endpoint, submissions are sent to that service. Otherwise, submitting opens the visitor's email app with the message pre-filled. The contact email is public portfolio information.
 
 ## Deploy
 Run `npm run build`, then publish the `dist` folder.

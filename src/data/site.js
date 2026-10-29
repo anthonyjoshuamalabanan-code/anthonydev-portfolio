@@ -10,7 +10,7 @@ export const profile = {
   name: 'Anthony Joshua Malabanan',
   title: 'Frontend Web Developer',
   location: 'Philippines',
-  email: 'anthonyjoshuamalabanan2004@redacted.invalid',
+  email: 'anthonyjoshuamalabanan2004@gmail.com',
   github: 'https://github.com/anthonyjoshuamalabanan-code',
   experience: 'I am a beginner frontend developer focused on learning by building real projects and improving my skills step by step.',
   availability: 'Open to learning opportunities',

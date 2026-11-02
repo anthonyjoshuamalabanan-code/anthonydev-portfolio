@@ -62,7 +62,7 @@ className="mx-auto w-fit border-b border-line pb-2 text-sm uppercase tracking-[0
         variants={item}
         className="mx-auto mt-5 max-w-xl text-lg text-muted"
       >
-        I&apos;m a student learning frontend development and building small
+        I&apos;m learning frontend development and building small
         projects as I grow my skills.
       </motion.p>
 
